@@ -1,0 +1,19 @@
+setp gladevcp.hal_Table1 0
+net rxonepos => gladevcp.XAPos
+net rxtwopos => gladevcp.YAPos
+net rxthreepos => gladevcp.ZAPos
+net rxfourpos => gladevcp.AAPos
+net rxfivepos => gladevcp.BAPos
+net rxsixpos => gladevcp.CAPos
+net txonepos => gladevcp.XTPos 
+net txtwopos => gladevcp.YTPos 
+net txthreepos => gladevcp.ZTPos 
+net txfourpos => gladevcp.ATPos
+net txfivepos => gladevcp.BTPos
+net txsixpos => gladevcp.CTPos
+net XLed gladevcp.XEnable => gladevcp.XLED
+net YLed gladevcp.YEnable => gladevcp.YLED
+net ZLed gladevcp.ZEnable => gladevcp.ZLED
+net ALed gladevcp.AEnable => gladevcp.ALED
+net BLed gladevcp.BEnable => gladevcp.BLED
+net CLed gladevcp.CEnable => gladevcp.CLED

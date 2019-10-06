@@ -1,0 +1,24 @@
+# Erstellt von stepconf am Tue Jul 16 23:06:39 2013
+# Änderungen an dieser Datei werden beim nächsten
+# Aufruf von stepconf überschrieben.
+# First go to OP, Then go to SIX AXIS.
+#loadusr -W lcec_conf /home/hdudebian/linuxcnc/configs/deltaPosOP.xml
+loadusr -W lcec_conf /home/hdudebian/linuxcnc/configs/deltaPos.xml
+loadrt lcec
+addf lcec.read-all servo-thread
+addf lcec.write-all servo-thread
+
+net txonepos => lcec.0.0.oneposcommand
+net txtwopos => lcec.0.0.twoposcommand
+net txthreepos => lcec.0.0.threeposcommand
+net txfourpos => lcec.0.0.fourposcommand
+net txfivepos => lcec.0.0.fiveposcommand
+net txsixpos => lcec.0.0.sixposcommand
+
+net rxonepos  => lcec.0.0.onepos
+net rxtwopos => lcec.0.0.twopos
+net rxthreepos  => lcec.0.0.threepos
+net rxfourpos  => lcec.0.0.fourpos
+net rxfivepos => lcec.0.0.fivepos
+net rxsixpos => lcec.0.0.sixpos
+

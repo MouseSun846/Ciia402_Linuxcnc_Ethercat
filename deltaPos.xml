@@ -1,0 +1,105 @@
+<masters>
+		<master idx="0" appTimePeriod="1000000" refClockSyncCycles="2">
+		<slave idx="0" type="generic" vid="00000009" pid="00009252" configPdos="true">
+			<sdoConfig idx="1c12" subIdx="complete">
+				<sdoDataRaw data="06 00 01 16 11 16 21 16 31 16 41 16 51 16"/>
+			</sdoConfig>		
+			<sdoConfig idx="1c13" subIdx="complete">
+				<sdoDataRaw data="06 00 01 1A 11 1A 21 1A 31 1A 41 1A 51 1A"/>
+			</sdoConfig>		
+			<sdoConfig idx="6060" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="60C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<sdoConfig idx="6860" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="68C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<sdoConfig idx="7060" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="70C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<sdoConfig idx="7860" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="78C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<sdoConfig idx="8060" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="80C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<sdoConfig idx="8860" subIdx="0">
+				<sdoDataRaw data="8"/>
+			</sdoConfig>		
+			<sdoConfig idx="88C2" subIdx="1">
+				<sdoDataRaw data="2"/>
+			</sdoConfig>
+			<syncManager idx="0" dir="out">
+      			</syncManager>
+			<syncManager idx="1" dir="in">
+   			 </syncManager>
+			<syncManager idx="2" dir="out">
+				<pdo idx="1601">
+					<pdoEntry idx="6040" subIdx="00" bitLen="16" halPin="onedrivecontrol" halType="u32"/>
+					<pdoEntry idx="607A" subIdx="00" bitLen="32" halPin="oneposcommand" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1611">
+					<pdoEntry idx="6840" subIdx="00" bitLen="16" halPin="twodrivecontrol" halType="u32"/>
+					<pdoEntry idx="687A" subIdx="00" bitLen="32" halPin="twoposcommand" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1621">
+					<pdoEntry idx="7040" subIdx="00" bitLen="16" halPin="threedrivecontrol" halType="u32"/>
+					<pdoEntry idx="707A" subIdx="00" bitLen="32" halPin="threeposcommand" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1631">
+					<pdoEntry idx="7840" subIdx="00" bitLen="16" halPin="fourdrivecontrol" halType="u32"/>
+					<pdoEntry idx="787A" subIdx="00" bitLen="32" halPin="fourposcommand" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1641">
+					<pdoEntry idx="8040" subIdx="00" bitLen="16" halPin="fivedrivecontrol" halType="u32"/>
+					<pdoEntry idx="807A" subIdx="00" bitLen="32" halPin="fiveposcommand" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1651">
+					<pdoEntry idx="8840" subIdx="00" bitLen="16" halPin="sixdrivecontrol" halType="u32"/>
+					<pdoEntry idx="887A" subIdx="00" bitLen="32" halPin="sixposcommand" halType="float" scale="1"/>
+				</pdo>
+			</syncManager>
+			<syncManager idx="3" dir="in">
+				<pdo idx="1A01">
+					<pdoEntry idx="6041" subIdx="00" bitLen="16" halPin="onedrivestatus" halType="u32"/>
+					<pdoEntry idx="6064" subIdx="00" bitLen="32" halPin="onepos" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1A11">
+					<pdoEntry idx="6841" subIdx="00" bitLen="16" halPin="twodrivestatus" halType="u32"/>
+					<pdoEntry idx="6864" subIdx="00" bitLen="32" halPin="twopos" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1A21">
+					<pdoEntry idx="7041" subIdx="00" bitLen="16" halPin="threedrivestatus" halType="u32"/>
+					<pdoEntry idx="7064" subIdx="00" bitLen="32" halPin="threepos" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1A31">
+					<pdoEntry idx="7841" subIdx="00" bitLen="16" halPin="fourdrivestatus" halType="u32"/>
+					<pdoEntry idx="7864" subIdx="00" bitLen="32" halPin="fourpos" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1A41">
+					<pdoEntry idx="8041" subIdx="00" bitLen="16" halPin="fivedrivestatus" halType="u32"/>
+					<pdoEntry idx="8064" subIdx="00" bitLen="32" halPin="fivepos" halType="float" scale="1"/>
+				</pdo>
+				<pdo idx="1A51">
+					<pdoEntry idx="8841" subIdx="00" bitLen="16" halPin="sixdrivestatus" halType="u32"/>
+					<pdoEntry idx="8864" subIdx="00" bitLen="32" halPin="sixpos" halType="float" scale="1"/>
+				</pdo>
+			</syncManager>
+			<dcConf assignActivate="300" sync0Cycle="*1" sync0Shift="250000"/>
+		</slave>
+		</master>
+</masters>
